@@ -6,4 +6,5 @@ RUN python -m pip install poetry
 ADD . /app/
 WORKDIR /app
 RUN poetry install
+EXPOSE 5000
 CMD [ "poetry", "run", "geppetto" ]
